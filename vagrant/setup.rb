@@ -62,6 +62,13 @@ class Build
         else
           s.inline = "sudo service nginx stop && sudo apachectl restart"
         end
+
+        if settings["postgresql"] ||= false
+          s.inline = "sudo apt-get install -y postgresql-9.4 postgresql-client-9.4"
+          s.inline = "sudo su postgres"
+          s.inline = "createuser -s -d -R -l vagrant"
+          s.inline = "createdb -U vagrant toy-library"
+        end
     end
 
   end
