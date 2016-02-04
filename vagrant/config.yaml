@@ -20,6 +20,6 @@ nginx: true
 postgresql: false
 # ports:
 #     - guest: 80
-#       host: 8000
+#       host: 8001
 
 
