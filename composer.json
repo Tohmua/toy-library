@@ -2,9 +2,9 @@
     "name": "toy-library",
     "description": "",
     "license": "BSD-3-Clause",
-    "homepage": "",
     "require": {
         "php": ">=5.5",
-        "zendframework/zendframework": "~2.5"
+        "zendframework/zendframework": "~2.5",
+        "zf-commons/zfc-user": "dev-master"
     }
 }
